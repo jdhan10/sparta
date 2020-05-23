@@ -17,17 +17,19 @@ soup = BeautifulSoup(data.text, 'html.parser')
 movies = soup.select(
     '#body-content > div.newest-list > div > table > tbody > tr')
 
-rank = 0
+rank = 1
 
 # movies (tr들) 의 반복문을 돌리기
 for movie in movies:
     # movie 안에 a 가 있으면,
     a_tag = movie.select_one('td.info > a.title.ellipsis')
+    star = movie.select_one('td.info > a.artist.ellipsis')
+    star = star.text
 
     # img 태그의 alt 속성값을 가져오기
     title = a_tag.text                                      # a 태그 사이의 텍스트를 가져오기
     # td 태그 사이의 텍스트를 가져오기
-    star = movie.select_one('td.info > a.artist.ellipsis').text
-    star = star.strip()
-    print(rank, title, '/', star)
+    
+
+    print(rank, title.strip(), '/', star.strip())
     rank += 1
