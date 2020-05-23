@@ -1,0 +1,39 @@
+<!-- 구글 웹폰트 -->
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dokdo&display=swap" rel="stylesheet">
+
+
+<style>
+*{
+    font-family: 'Dokdo', cursive;
+ }
+ .wrap {
+     margin: 10px auto;
+     width: 300px;
+     
+ }
+
+ .box {
+     background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+     background-position: center;
+     background-size: cover;
+
+     width: 400px;
+     height: 360px;
+
+     text-align: center;
+     color: white;
+
+     border-radius: 10px;
+     padding-top: 100px;
+
+     margin-bottom: 100px;
+
+ }
+
+ .smallfont {
+     font-size: large;
+     margin: 100px auto;
+
+     margin: 100px;
+ }
+</style>
